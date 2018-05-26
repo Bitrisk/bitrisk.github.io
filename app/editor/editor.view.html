@@ -1,0 +1,19 @@
+<h1>GIF Editor</h1>
+
+<img id="preview" src="" rel:animated_src="gifs/shark.gif" rel:auto_play="0"
+	width="376" height="288"
+	loadgif />
+<br>
+
+<div class="controls clearfix">
+	<button class="btn" ng-click="editor.pause()">Pause</button>
+	<button class="btn" ng-click="editor.play()">Play</button>
+	<button class="btn" ng-click="editor.restart()">Restart</button>
+	<button class="btn" ng-click="editor.stepPrev()">Step back</button>
+	<button class="btn" ng-click="editor.stepNext()">Step forward</button>
+</div>
+<br>
+
+<div class="thumbsWrap clearfix">
+	<thumbs frames-data="editor.framesData"></thumbs>
+</div>

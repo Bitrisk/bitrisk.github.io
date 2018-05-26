@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GIF Editor</title>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="gifEditor">
+	<main>
+		<ng-view></ng-view>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-route.min.js"></script>
+	<script src="lib/js/libgif.js"></script>
+	<script src="lib/js/rubbable.js"></script>
+
+	<!-- App Setup -->
+	<script src="app/app.js"></script>
+
+	<!-- Editor -->
+	<script src="app/editor/editor.controller.js"></script>
+	<script src="app/editor/loadgif.directive.js"></script>
+	<script src="app/editor/thumbs.directive.js"></script>
+</body>
+</html>
